@@ -1,0 +1,65 @@
+[gd_scene load_steps=3 format=3 uid="uid://bpr50h87vipbi"]
+
+[ext_resource type="PackedScene" uid="uid://ty5q38bpk5se" path="res://assets/computer.tscn" id="1_a202f"]
+
+[sub_resource type="FontFile" id="FontFile_a202f"]
+cache/0/32/0/ascent = 0.0
+cache/0/32/0/descent = 0.0
+cache/0/32/0/underline_position = 0.0
+cache/0/32/0/underline_thickness = 0.0
+cache/0/32/0/scale = 1.0
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/33/0/ascent = 0.0
+cache/0/33/0/descent = 0.0
+cache/0/33/0/underline_position = 0.0
+cache/0/33/0/underline_thickness = 0.0
+cache/0/33/0/scale = 1.0
+cache/0/34/0/ascent = 0.0
+cache/0/34/0/descent = 0.0
+cache/0/34/0/underline_position = 0.0
+cache/0/34/0/underline_thickness = 0.0
+cache/0/34/0/scale = 1.0
+cache/0/35/0/ascent = 0.0
+cache/0/35/0/descent = 0.0
+cache/0/35/0/underline_position = 0.0
+cache/0/35/0/underline_thickness = 0.0
+cache/0/35/0/scale = 1.0
+cache/0/36/0/ascent = 0.0
+cache/0/36/0/descent = 0.0
+cache/0/36/0/underline_position = 0.0
+cache/0/36/0/underline_thickness = 0.0
+cache/0/36/0/scale = 1.0
+cache/0/37/0/ascent = 0.0
+cache/0/37/0/descent = 0.0
+cache/0/37/0/underline_position = 0.0
+cache/0/37/0/underline_thickness = 0.0
+cache/0/37/0/scale = 1.0
+cache/0/38/0/ascent = 0.0
+cache/0/38/0/descent = 0.0
+cache/0/38/0/underline_position = 0.0
+cache/0/38/0/underline_thickness = 0.0
+cache/0/38/0/scale = 1.0
+cache/0/100/0/ascent = 0.0
+cache/0/100/0/descent = 0.0
+cache/0/100/0/underline_position = 0.0
+cache/0/100/0/underline_thickness = 0.0
+cache/0/100/0/scale = 1.0
+
+[node name="Node3D" type="Node3D"]
+
+[node name="Computer" parent="." instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.59015, 0)
+
+[node name="Label3D" type="Label3D" parent="."]
+transform = Transform3D(-0.0413873, 0, 0.999143, 0, 1, 0, -0.999143, 0, -0.0413873, 19.161, 7.79165, 0)
+modulate = Color(0.827451, 0.0784314, 0.0235294, 1)
+text = "This a computer"
+font = SubResource("FontFile_a202f")
+font_size = 100
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.0840256, 0, 0.996464, 0, 1, 0, -0.996464, 0, -0.0840256, 23.0872, 7.90733, 0)

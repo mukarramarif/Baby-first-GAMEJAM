@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://ty5q38bpk5se"]
+
+[ext_resource type="PackedScene" uid="uid://db3vtcigj8m52" path="res://assets/quantum_computer.glb" id="1_4dp6j"]
+
+[node name="Computer" type="Node3D"]
+
+[node name="Sketchfab_Scene2" parent="." instance=ExtResource("1_4dp6j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.182747, 0, 0.654439)
