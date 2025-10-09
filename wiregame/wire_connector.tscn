@@ -1,6 +1,41 @@
-[gd_scene load_steps=5 format=4 uid="uid://b0c6iqnym4tlo"]
+[gd_scene load_steps=8 format=4 uid="uid://dfopyv74v5566"]
 
-[ext_resource type="Script" uid="uid://blimmeyx7anf5" path="res://target.gd" id="1_afl7o"]
+[ext_resource type="Script" path="res://target.gd" id="1_afl7o"]
+[ext_resource type="Texture2D" uid="uid://dwmtatlm6irdj" path="res://assets/texturecan-metal-0040-cylinder-1200.jpg" id="2_0cgdd"]
+
+[sub_resource type="Shader" id="Shader_afl7o"]
+code = "// NOTE: Shader automatically converted from Godot Engine 4.4.1.stable's StandardMaterial3D.
+
+shader_type spatial;
+
+uniform vec4 highlight_color : source_color = vec4(1.0, 1.0, 0.0, 1.0);
+uniform float highlight_power : hint_range(0.0, 10.0) = 3.0;
+uniform float highlight_intensity : hint_range(0.0, 1.0) = 0.0;
+uniform float rim_power : hint_range(1.0, 10.0) = 3.0;
+uniform sampler2D texture_albedo : source_color;
+
+void fragment() {
+    vec4 albedo_tex = texture(texture_albedo, UV);
+
+    float rim = 1.0 - dot(NORMAL, VIEW);
+    rim = pow(rim, rim_power);
+	float depth = texture(texture_albedo,UV).x*0.5;
+    vec4 final_color = albedo_tex * vec4(VERTEX.xy,depth,1.0);
+    final_color.rgb = mix(final_color.rgb, highlight_color.rgb, rim * highlight_intensity);
+
+    ALBEDO = final_color.rgb;
+    EMISSION = highlight_color.rgb * rim * highlight_intensity * highlight_power;}
+
+"
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_0cgdd"]
+render_priority = 0
+shader = SubResource("Shader_afl7o")
+shader_parameter/highlight_color = Color(0.457458, 0.453315, 2.88785e-07, 1)
+shader_parameter/highlight_power = 10.0
+shader_parameter/highlight_intensity = 0.653
+shader_parameter/rim_power = 4.82
+shader_parameter/texture_albedo = ExtResource("2_0cgdd")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afl7o"]
 albedo_color = Color(0.000113828, 0.000113828, 0.000113828, 1)
@@ -124,6 +159,7 @@ bones/7/rotation = Quaternion(0, 0, 0, 1)
 bones/7/scale = Vector3(1, 1, 1)
 
 [node name="Cylinder_070" type="MeshInstance3D" parent="wire_connector/Armature_003/Skeleton3D"]
+material_override = SubResource("ShaderMaterial_0cgdd")
 mesh = SubResource("ArrayMesh_0cgdd")
 skin = SubResource("Skin_4amec")
 
