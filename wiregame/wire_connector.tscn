@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=4 uid="uid://b0c6iqnym4tlo"]
+[gd_scene load_steps=6 format=4 uid="uid://b0c6iqnym4tlo"]
 
 [ext_resource type="Script" uid="uid://blimmeyx7anf5" path="res://target.gd" id="1_afl7o"]
+[ext_resource type="PackedScene" uid="uid://bfg1exvc68kay" path="res://prongs.tscn" id="2_0cgdd"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afl7o"]
 albedo_color = Color(0.000113828, 0.000113828, 0.000113828, 1)
@@ -57,11 +58,8 @@ bind/7/pose = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -20.5671, 0)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.15226, 16.5263, -7.35948)
 script = ExtResource("1_afl7o")
 
-[node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(0.0728503, 0.229982, -0.970464, -0.0172157, 0.973195, 0.229337, 0.997194, -1.86789e-09, 0.0748568, -10.7241, 14.0578, 0.721741)
-fov = 105.256
-
 [node name="wire_connector" type="Node3D" parent="."]
+transform = Transform3D(0.53, 0, 0, 0, 0.53, 0, 0, 0, 0.53, 0, 0, 0)
 
 [node name="Armature_003" type="Node3D" parent="wire_connector"]
 
@@ -131,3 +129,6 @@ skin = SubResource("Skin_4amec")
 root_bone = &"Bone"
 tip_bone = &"Bone.007"
 target_node = NodePath("../../../../target")
+
+[node name="prongs" parent="." instance=ExtResource("2_0cgdd")]
+transform = Transform3D(1, 0, 0, 0, -0.5, -0.866025, 0, 0.866025, -0.5, 0, 11.8681, 0.156406)
