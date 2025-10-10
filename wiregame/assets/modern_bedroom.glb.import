@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d0mq6pwn1v65v"
-path="res://.godot/imported/quantum_computer.glb-30a05cc10e2fbf7dba70512a1a6b8ba0.scn"
+uid="uid://bugcv8di6gywi"
+path="res://.godot/imported/modern_bedroom.glb-e9b44ab36209455206e8491814f0f85c.scn"
 
 [deps]
 
-source_file="res://assets/quantum_computer.glb"
-dest_files=["res://.godot/imported/quantum_computer.glb-30a05cc10e2fbf7dba70512a1a6b8ba0.scn"]
+source_file="res://assets/modern_bedroom.glb"
+dest_files=["res://.godot/imported/modern_bedroom.glb-e9b44ab36209455206e8491814f0f85c.scn"]
 
 [params]
 
