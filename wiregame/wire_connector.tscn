@@ -130,5 +130,7 @@ root_bone = &"Bone"
 tip_bone = &"Bone.007"
 target_node = NodePath("../../../../target")
 
-[node name="prongs" parent="." instance=ExtResource("2_0cgdd")]
+[node name="transformer" type="Node3D" parent="."]
+
+[node name="prongs" parent="transformer" instance=ExtResource("2_0cgdd")]
 transform = Transform3D(1, 0, 0, 0, -0.5, -0.866025, 0, 0.866025, -0.5, 0, 11.8681, 0.156406)
