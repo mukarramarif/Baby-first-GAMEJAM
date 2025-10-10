@@ -19,5 +19,17 @@ shader_parameter/texture_albedo = ExtResource("3_xhad1")
 [node name="prongs" parent="." index="0" instance=ExtResource("4_xexyl")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0539944, 19.6998, -1.56505)
 
-[node name="Cylinder_070" parent="Armature_003/Skeleton3D" index="0"]
-material_override = SubResource("ShaderMaterial_xexyl")
+[node name="Cylinder_070" type="MeshInstance3D" parent="wire_connector/Armature_003/Skeleton3D"]
+material_override = SubResource("ShaderMaterial_0cgdd")
+mesh = SubResource("ArrayMesh_0cgdd")
+skin = SubResource("Skin_4amec")
+
+[node name="SkeletonIK3D" type="SkeletonIK3D" parent="wire_connector/Armature_003/Skeleton3D"]
+root_bone = &"Bone"
+tip_bone = &"Bone.007"
+target_node = NodePath("../../../../target")
+
+[node name="transformer" type="Node3D" parent="."]
+
+[node name="prongs" parent="transformer" instance=ExtResource("2_0cgdd")]
+transform = Transform3D(1, 0, 0, 0, -0.5, -0.866025, 0, 0.866025, -0.5, 0, 11.8681, 0.156406)
