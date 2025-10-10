@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://d0mq6pwn1v65v"
-path="res://.godot/imported/quantum_computer.glb-30a05cc10e2fbf7dba70512a1a6b8ba0.scn"
+uid="uid://c005h4jnmyx5e"
+path="res://.godot/imported/monitor.glb-557c90a8523f9b8f9f9d9b2641d98ec7.scn"
 
 [deps]
 
-source_file="res://assets/quantum_computer.glb"
-dest_files=["res://.godot/imported/quantum_computer.glb-30a05cc10e2fbf7dba70512a1a6b8ba0.scn"]
+source_file="res://assets/monitor.glb"
+dest_files=["res://.godot/imported/monitor.glb-557c90a8523f9b8f9f9d9b2641d98ec7.scn"]
 
 [params]
 
