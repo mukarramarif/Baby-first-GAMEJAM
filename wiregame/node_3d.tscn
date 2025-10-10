@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://bpr50h87vipbi"]
+[gd_scene load_steps=5 format=3 uid="uid://bpr50h87vipbi"]
 
 [ext_resource type="PackedScene" uid="uid://ty5q38bpk5se" path="res://assets/computer.tscn" id="1_a202f"]
+[ext_resource type="PackedScene" uid="uid://dfopyv74v5566" path="res://wire_connector.tscn" id="2_noarx"]
+[ext_resource type="PackedScene" path="res://pylon.tscn" id="3_a0tk4"]
 
 [sub_resource type="FontFile" id="FontFile_a202f"]
 subpixel_positioning = 0
@@ -66,3 +68,42 @@ font_size = 100
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(-0.0840256, 0, 0.996464, 0, 1, 0, -0.996464, 0, -0.0840256, 23.0872, 7.90733, 0)
+
+[node name="wire_connector" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 0.275541, 0, 0, 0, 1, 4.47596, 0, 13.7441)
+
+[node name="wire_connector2" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 0.275541, 0, 0, 0, 1, 0.369399, 0, 13.7441)
+
+[node name="wire_connector3" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 0.275541, 0, 0, 0, 1, 0.369399, 0, 16.8972)
+
+[node name="wire_connector4" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 0.275541, 0, 0, 0, 1, 4.3694, 0, 16.8972)
+
+[node name="wire_connector5" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 0.275541, 0, 0, 0, 1, 4.3694, 0, 19.8958)
+
+[node name="wire_connector6" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 0.275541, 0, 0, 0, 1, -0.0304346, 0, 19.8958)
+
+[node name="wire_connector7" parent="." instance=ExtResource("2_noarx")]
+transform = Transform3D(1, 0, 0, 0, 0.275541, 0, 0, 0, 1, -0.0304346, 0, 19.8958)
+
+[node name="pylon" parent="." instance=ExtResource("3_a0tk4")]
+transform = Transform3D(-0.00305435, 0, 0.999995, 0, 1, 0, -0.999995, 0, -0.00305435, 3.67173, 6.88375, 5.25448)
+
+[node name="pylon2" parent="." instance=ExtResource("3_a0tk4")]
+transform = Transform3D(-0.00305435, 0, 0.999995, 0, 1, 0, -0.999995, 0, -0.00305435, -4.07265, 6.88375, 5.25448)
+
+[node name="pylon3" parent="." instance=ExtResource("3_a0tk4")]
+transform = Transform3D(-0.00305435, 0, 0.999995, 0, 1, 0, -0.999995, 0, -0.00305435, -4.07265, 5.25458, 5.25448)
+
+[node name="pylon4" parent="." instance=ExtResource("3_a0tk4")]
+transform = Transform3D(-0.00305435, 0, 0.999995, 0, 1, 0, -0.999995, 0, -0.00305435, 3.27228, 5.25458, 5.25448)
+
+[node name="pylon5" parent="." instance=ExtResource("3_a0tk4")]
+transform = Transform3D(-0.00305435, 0, 0.999995, 0, 1, 0, -0.999995, 0, -0.00305435, 3.27228, 2.79691, 5.25448)
+
+[node name="pylon6" parent="." instance=ExtResource("3_a0tk4")]
+transform = Transform3D(-0.00305435, 0, 0.999995, 0, 1, 0, -0.999995, 0, -0.00305435, -4.12676, 2.79691, 5.25448)
