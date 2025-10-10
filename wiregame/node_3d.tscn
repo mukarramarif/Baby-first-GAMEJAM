@@ -2,7 +2,7 @@
 
 [ext_resource type="PackedScene" uid="uid://ty5q38bpk5se" path="res://assets/computer.tscn" id="1_a202f"]
 [ext_resource type="PackedScene" uid="uid://dfopyv74v5566" path="res://wire_connector.tscn" id="2_noarx"]
-[ext_resource type="PackedScene" path="res://pylon.tscn" id="3_a0tk4"]
+[ext_resource type="PackedScene" uid="uid://byda6xw67m1wn" path="res://pylon.tscn" id="3_a0tk4"]
 
 [sub_resource type="FontFile" id="FontFile_a202f"]
 subpixel_positioning = 0

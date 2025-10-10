@@ -7,7 +7,6 @@
 [ext_resource type="PackedScene" uid="uid://bfg1exvc68kay" path="res://prong.tscn" id="4_xexyl"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_xexyl"]
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_xexyl"]
 render_priority = 0
 shader = ExtResource("2_xhad1")
 shader_parameter/highlight_color = Color(1, 1, 0, 1)

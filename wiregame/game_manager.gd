@@ -52,5 +52,4 @@ func _input(event):
 			pass
 			
 			print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!! emitting player clicked signal")
-			print(get_current_object())
 			emit_signal("click_signal")
