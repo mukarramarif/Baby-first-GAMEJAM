@@ -1,9 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://dxpgddwyjnpy3"]
+[gd_scene load_steps=5 format=3 uid="uid://dfga81jfompov"]
 
 [ext_resource type="PackedScene" uid="uid://bpr50h87vipbi" path="res://node_3d.tscn" id="1_8vmrx"]
 [ext_resource type="PackedScene" uid="uid://bugcv8di6gywi" path="res://assets/modern_bedroom.glb" id="2_g7hma"]
 [ext_resource type="PackedScene" uid="uid://cyim04gxornbe" path="res://assets/freddy_fazbear_....glb" id="3_r2u8m"]
-[ext_resource type="PackedScene" uid="uid://cl5rw042r2pgf" path="res://monitorDisplay.tscn" id="4_r2u8m"]
+[ext_resource type="PackedScene" uid="uid://w2s8e20we7tm" path="res://monitorDisplay.tscn" id="4_r2u8m"]
 
 [node name="wireworld" type="Node3D"]
 

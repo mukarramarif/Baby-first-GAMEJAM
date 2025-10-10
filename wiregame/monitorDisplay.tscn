@@ -1,11 +1,11 @@
-[gd_scene load_steps=26 format=4 uid="uid://cl5rw042r2pgf"]
+[gd_scene load_steps=26 format=4 uid="uid://w2s8e20we7tm"]
 
 [ext_resource type="Texture2D" uid="uid://p1jicib4qchb" path="res://assets/monitor_0.jpg" id="1_7b0jt"]
 [ext_resource type="Texture2D" uid="uid://fmagvyo3q1ff" path="res://assets/monitor_2.jpg" id="2_v8fsc"]
 [ext_resource type="Texture2D" uid="uid://cddcjfbgbrbaf" path="res://assets/monitor_1.png" id="3_5bao7"]
 [ext_resource type="Texture2D" uid="uid://day35ukwaegbr" path="res://assets/monitor_3.png" id="4_jw5p8"]
 [ext_resource type="Shader" uid="uid://bpalt43bmu2h8" path="res://filterscreen.gdshader" id="5_equm8"]
-[ext_resource type="Shader" uid="uid://dahi1b2x5e3q7" path="res://monitorDisplay.gdshader" id="5_gyojw"]
+[ext_resource type="Shader" path="res://monitorDisplay.gdshader" id="5_gyojw"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_bpftn"]
 resource_name = "monitor"
@@ -202,6 +202,7 @@ shader_parameter/screen_texture = SubResource("ViewportTexture_equm8")
 
 [sub_resource type="PlaneMesh" id="PlaneMesh_gyojw"]
 material = SubResource("ShaderMaterial_7b0jt")
+size = Vector2(1.96, 1.825)
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_85ixv"]
 _surfaces = [{
@@ -343,7 +344,7 @@ skeleton = NodePath("")
 transform = Transform3D(100, 0, 0, 0, -1.62921e-05, 100, 0, -100, -1.62921e-05, 0.084497, 9.84746, -1.85931)
 
 [node name="monitor_006_low_monitor_0" type="MeshInstance3D" parent="1f470ca35d78419c8100b07ef4bb2562_fbx/RootNode/monitor_006_low"]
-transform = Transform3D(10.5263, -0.0709007, -0.0159355, -0.587094, -1.23684, 1.30264, 0.108118, 0.186672, 8.62488, -1.40426, -0.650084, 8.75253)
+transform = Transform3D(10.5263, -0.0709007, -0.0159355, -0.587094, -1.23684, 1.30264, 0.108118, 0.186672, 8.62488, -1.12323, -1.35685, 8.75253)
 mesh = SubResource("PlaneMesh_gyojw")
 skeleton = NodePath("")
 

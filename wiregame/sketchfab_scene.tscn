@@ -1,5 +1,5 @@
 [gd_scene load_steps=2 format=3 uid="uid://democih5grm5x"]
 
-[ext_resource type="PackedScene" uid="uid://ceohl6kbkan3m" path="res://assets/quantum_computer.glb" id="1_r57si"]
+[ext_resource type="PackedScene" uid="uid://d0mq6pwn1v65v" path="res://assets/quantum_computer.glb" id="1_r57si"]
 
 [node name="Sketchfab_Scene" instance=ExtResource("1_r57si")]

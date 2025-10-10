@@ -3,6 +3,9 @@
 [ext_resource type="PackedScene" uid="uid://ty5q38bpk5se" path="res://assets/computer.tscn" id="1_a202f"]
 
 [sub_resource type="FontFile" id="FontFile_a202f"]
+subpixel_positioning = 0
+msdf_pixel_range = 14
+msdf_size = 128
 cache/0/32/0/ascent = 0.0
 cache/0/32/0/descent = 0.0
 cache/0/32/0/underline_position = 0.0
